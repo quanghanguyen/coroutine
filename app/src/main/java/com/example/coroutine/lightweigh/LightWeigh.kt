@@ -1,18 +1,23 @@
 package com.example.coroutine
 
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-fun main() {
+//-------------------------------------------------------------------------------
+
+private fun main() {
     val start = System.currentTimeMillis()
     runBlocking {
         repeat(1_000_000) {
             launch {
-                println("Hi")
+                println("Xin chào")
             }
         }
     }
     val end = System.currentTimeMillis()
     println("Thời gian chạy = ${end - start} ms")
 }
+
+// ------------------------------------------------------------------------------
 

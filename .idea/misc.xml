@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/learn_android/Coroutine/app/src/main/res/layout/activity_blocking_thread.xml" value="0.25416666666666665" />
         <entry key="..\:/learn_android/Coroutine/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/learn_android/Coroutine/app/src/main/res/layout/activity_main2.xml" value="0.12604166666666666" />
+        <entry key="..\:/learn_android/Coroutine/app/src/main/res/layout/activity_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/learn_android/Coroutine/app/src/main/res/layout/activity_suspend.xml" value="0.253125" />
       </map>
     </option>
   </component>
