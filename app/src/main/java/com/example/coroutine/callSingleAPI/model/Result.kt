@@ -1,4 +1,4 @@
-package com.example.coroutine.callAPI.model
+package com.example.coroutine.callSingleAPI.model
 
 data class Result (
     val _id: String,

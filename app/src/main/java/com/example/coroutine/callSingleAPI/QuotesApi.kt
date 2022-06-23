@@ -1,6 +1,6 @@
-package com.example.coroutine.callAPI
+package com.example.coroutine.callSingleAPI
 
-import com.example.coroutine.callAPI.model.QuoteList
+import com.example.coroutine.callSingleAPI.model.QuoteList
 import retrofit2.Response
 import retrofit2.http.GET
 

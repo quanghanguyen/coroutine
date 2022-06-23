@@ -23,7 +23,7 @@
             android:name=".runblocking.BlockingThread"
             android:exported="false" />
         <activity
-            android:name=".callAPI.MainActivity"
+            android:name=".callSingleAPI.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

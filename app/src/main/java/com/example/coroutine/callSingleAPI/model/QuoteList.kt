@@ -1,6 +1,4 @@
-package com.example.coroutine.callAPI.model
-
-import com.example.coroutine.callAPI.model.Result
+package com.example.coroutine.callSingleAPI.model
 
 data class QuoteList(
     val count: Int,
