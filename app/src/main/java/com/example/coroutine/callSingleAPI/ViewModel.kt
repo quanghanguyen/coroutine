@@ -12,7 +12,7 @@ class ViewModel : ViewModel() {
     var result = MutableLiveData<CallResult>()
 
     sealed class CallResult {
-        class ResultOk(val message : Response<QuoteList>) : CallResult()
+        class ResultOk(val data : Response<QuoteList>) : CallResult()
         class ResultError(val errorMessage : String) : CallResult()
     }
 

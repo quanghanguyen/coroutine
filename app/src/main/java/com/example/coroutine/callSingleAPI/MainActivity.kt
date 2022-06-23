@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         viewModel.result.observe(this) {result ->
             when (result) {
                 is ViewModel.CallResult.ResultOk -> {
-                    Log.e("MainActivity", result.message.body().toString())
-                    binding.text.text = result.message.body().toString()
+                    Log.e("MainActivity", result.data.body().toString())
+                    binding.text.text = result.data.body().toString()
                 }
                 is ViewModel.CallResult.ResultError -> {
                     Toast.makeText(this, result.errorMessage, Toast.LENGTH_SHORT).show()
