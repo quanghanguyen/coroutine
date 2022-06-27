@@ -12,5 +12,6 @@ fun main() = runBlocking{
     }
     println("Hello,")
     job.join()
+
     println("End")
 }

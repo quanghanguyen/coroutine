@@ -30,18 +30,10 @@ class SecondViewModel : ViewModel() {
 
         runBlocking {
             val dataOne = async{ one.getTeamDetail(2019) }
-            if (dataOne.isCompleted) {
                 resultOne.postValue(CallAPIOne.ResultOk(dataOne.await()))
-            } else {
-                resultOne.postValue(CallAPIOne.ResultError("Error"))
-            }
 
             val dataTwo = async { two.getChartDetail(2019) }
-            if (dataTwo.isCompleted) {
-                resultTwo.postValue(CallAPITwo.ResultOk(dataTwo.await()))
-            } else {
-                resultTwo.postValue(CallAPITwo.ResultError("Error"))
-            }
+            resultTwo.postValue(CallAPITwo.ResultOk(dataTwo.await()))
         }
     }
 }

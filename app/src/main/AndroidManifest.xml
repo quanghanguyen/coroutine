@@ -4,7 +4,6 @@
     package="com.example.coroutine">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,23 +15,21 @@
         android:theme="@style/Theme.Coroutine"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".suspend.SuspendFunction"
-            android:exported="false" />
-        <activity
             android:name=".runblocking.BlockingThread"
             android:exported="false" />
         <activity
+            android:name=".callMultiAPI.SecondActivity"
+            android:exported="false" />
+        <activity
             android:name=".callSingleAPI.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".suspend.SuspendFunction"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
