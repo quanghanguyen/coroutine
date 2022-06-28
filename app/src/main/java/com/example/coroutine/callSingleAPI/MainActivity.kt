@@ -1,11 +1,15 @@
 package com.example.coroutine.callSingleAPI
 
-import androidx.appcompat.app.AppCompatActivity
+import android.R
 import android.os.Bundle
 import android.util.Log
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import com.example.coroutine.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         initObserver()
         viewModel.makeAPICall()
+        val animation1 = AnimationUtils.loadAnimation(this,R.anim.fade_out).duration
+        binding.text.animation = animation1
     }
 
     private fun initObserver() {
