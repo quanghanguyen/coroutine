@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/call_single_api"
+        style="@style/Button"
+        android:layout_centerInParent="true"
+        android:text="@string/call_single_api" />
+
+    <Button
+        android:id="@+id/blocking_thread"
+        style="@style/Button"
+        android:layout_above="@+id/call_single_api"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/blocking_thread" />
+
+    <Button
+        android:id="@+id/call_multi_api"
+        style="@style/Button"
+        android:layout_below="@+id/call_single_api"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/call_multiple_api" />
+
+    <Button
+        android:id="@+id/suspend_function"
+        style="@style/Button"
+        android:layout_above="@+id/blocking_thread"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/suspend_function" />
+
+    <Button
+        android:id="@+id/animation"
+        style="@style/Button"
+        android:layout_below="@+id/call_multi_api"
+        android:layout_marginTop="16dp"
+        android:text="@string/animation"
+        />
+
+</RelativeLayout>

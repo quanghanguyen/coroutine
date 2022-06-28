@@ -23,8 +23,9 @@ class MainActivity : AppCompatActivity() {
 
         initObserver()
         viewModel.makeAPICall()
-        val animation1 = AnimationUtils.loadAnimation(this,R.anim.fade_out).duration
-        binding.text.animation = animation1
+
+//        val animation1 = AnimationUtils.loadAnimation(this,R.anim.fade_out).duration
+//        binding.text.animation = animation1
     }
 
     private fun initObserver() {

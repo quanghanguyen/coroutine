@@ -3,4 +3,9 @@
     <string name="data_1">DATA 1</string>
     <string name="data">Data</string>
     <string name="data_2">DATA 2</string>
+    <string name="suspend_function">Suspend Function</string>
+    <string name="blocking_thread">Blocking Thread</string>
+    <string name="animation">Animation</string>
+    <string name="call_single_api">Call Single API</string>
+    <string name="call_multiple_api">Call Multiple API</string>
 </resources>
